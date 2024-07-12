@@ -1,0 +1,96 @@
+Braeden Stewart
+CS 1400
+Assn-10
+
+    My goal with this program is to draw circular patterns according to user input
+
+Design:
+
+    pattern.py will start by import turtle
+
+    pattern.py will then define the setup() function to set the speed, and original orientation
+
+    reset() will be defined to clear the turtle drawings
+
+    setRandomColor() will be defined to select a random color for turtle
+
+    drawRectangle() will be defined to draw a rectangle of width X height with a rotation
+
+    drawCircle() will be defined to draw a circle
+
+    drawRectanglePattern() will be defined:
+
+        turtle will go to given coordinates and begin a loop to draw all the rectangles in a circular pattern
+
+    drawCirclePattern() will be defined:
+
+       turtle will go to given coordinates and begin a loop to draw all the circles in a circular pattern
+
+    drawSuperPattern() will be defined:
+
+        turtle will randomly draw a rectangle pattern or circle pattern with random positions and sizes
+
+        turtle will end loop once number of patterns has been satisfied
+
+
+    assn10.py will start by importing pattern.py
+
+    main() will be defined:
+
+        pattern will be set-up, and then prompt the user for which mode they want to play
+
+        depending on user input, a circle, rectangle, or super pattern will be drawn
+
+        the user will be prompted again for an input on whether they want to continue playing
+
+        depending on user input, the window may be cleared, stay the same or be left open
+
+        program will end if the user decides that they do not want to play anymore
+
+    end of line...
+
+Implementation: see assn10.py and pattern.py
+
+Testing:
+
+    Test 1:
+        Input:
+
+            1) Rectangle Pattern
+            2) Circle Pattern
+            3) Super Pattern
+            Which mode do you want to play? 1, 2 or 3: 1
+
+        Output:
+
+            program asks for rectangle pattern values
+
+    Test 2:
+        Input:
+
+            give me some center coordinates(x,y): 0,0
+            Give me an offset value:50
+            Give me a rectangle width:25
+            Give me a rectangle height:75
+            How many rectangles do you want it to have?10
+            Give me a rotation value:45
+
+        Output:
+
+            program draws rectangle pattern using values given
+
+    Test 3:
+        Input:
+
+            Do you want to play again?
+            1) Yes, and keep drawings
+            2) Yes, and clear drawings
+            3) No, I am all done
+            Choose 1, 2, or 3: 3
+
+        Output:
+
+            Thanks for playing!
+
+
+    End of line...

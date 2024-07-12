@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>Python</ID>
+  <OriginalElement>#C:/Users/bstew/PycharmProjects/Stewart-Braeden-Assn14/gubbinsutil.py</OriginalElement>
+  <nodes>
+    <node x="184.0" y="542.0">gubbinsutil.Card</node>
+    <node x="47.25" y="0.0">object</node>
+    <node x="0.0" y="575.0">gubbinsutil.Deck</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="gubbinsutil.Card" target="object">
+      <point x="0.0" y="-114.0" />
+      <point x="263.5" y="517.0" />
+      <point x="235.5" y="517.0" />
+      <point x="62.75" y="246.0" />
+    </edge>
+    <edge source="gubbinsutil.Deck" target="object">
+      <point x="0.0" y="-81.0" />
+      <point x="82.0" y="517.0" />
+      <point x="110.0" y="517.0" />
+      <point x="-62.75" y="246.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="130.5" y="495.0" />
+  <SelectedNodes>
+    <node>gubbinsutil.Deck</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+</Diagram>
+

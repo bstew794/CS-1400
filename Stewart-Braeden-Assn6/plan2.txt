@@ -1,0 +1,133 @@
+Braeden Stewart
+CS 1400
+Assn-6: Task 1
+
+	My goal with this program is to calculate and display the gross income, net income (after deductions).
+	The user must be able to input the name, pay rate, and weekly hours of the employee for calculating the results.
+
+	Additionally, The output must be formatted according to these standards:
+		Headings of sections are centered and spaces between sections
+		Main output header is all capitalized
+		Output numbers are right aligned with decimals aligned
+		Colons and $ signs are aligned
+		A single print statement is used for output
+
+	functions needed:
+	    print()
+	    format()
+	    input()
+	    eval()
+	    abs()
+	    str()
+
+    formulas needed:
+
+
+	Possible issue could be:
+		user inputs a negative number {may force variables to be abs()}
+		variables need to be converted to str() or int().
+
+Design:
+	I plan to start the program by importing the necessary functions
+		*may or may not need math to be imported*
+	
+	The next step will be to use the eval(input()) function to prompt the user for these inputs:
+		Employee's name = employeeName
+		Number of hours worked in a week = weeklyHours
+		hourly pay rate = payRate
+		federal tax rate = federalTaxRate
+		state tax rate = stateTaxRate
+
+	After the input is given, the program will restate the employee's name with the hours worked and the pay rate
+	Also, the Gross pay will be claculated { = grossPay}, and then displayed to the user
+	
+	The deductions will then display the total amount withheld = totalDeduction
+		The individual amount for the state and federal withholding will be displayed as well
+			federalWithholding and stateWithholding
+
+	Finally, the net pay will be calculated from grossPay - totalDeduction = netPay, and then displayed
+
+	To format everything, we assign them new variables
+		ie finalOutput = format(output, "<alignment><sign>,<precision><type>")
+	
+	*NOTE: everything is displayed at the same time at the end with a single print function
+		calculations will be done before*
+
+Implementation: see task2.py
+
+Testing:
+	
+	Test 1:
+		Input:
+		    Name = Han Solo
+		    weekly hours = 25
+		    hourly pay rate = 15
+		    federal tax (or galactic tax) = .25
+		    state (planetary) tax = .10
+
+        Output:
+             HAN SOLO PAY INFORMATION
+
+                   pay
+                          Hours Worked:            25
+                              Pay Rate: $       15.00
+                             Gross Pay: $      375.00
+
+                Deductions
+           Federal Withholding (25.0%): $       93.75
+             State Withholding (10.0%): $       37.50
+                       Total Deduction: $      131.25
+
+                               Net Pay: $      243.75
+
+        *Worked quite well, but looking back at the code, it was a little messy, so augmented operators should fix that*
+
+    Test 2:
+        Input:
+            Name = Braeden Stewart
+            weekly hours = 40
+            hourly pay rate = 13
+            federal tax = .15
+            state tax = .07
+
+        Output:
+             BRAEDEN STEWART PAY INFORMATION
+
+                  pay
+                         Hours Worked:            40
+                             Pay Rate: $       13.00
+                            Gross Pay: $      520.00
+
+               Deductions
+          Federal Withholding (15.0%): $       78.00
+             State Withholding (7.0%): $       36.40
+                      Total Deduction: $      114.40
+
+                              Net Pay: $      405.60
+
+        *Success! Works perfectly and the code is a lot neater and organized!*
+
+    Test 3:
+        Input:
+            Name = Crash Bandicoot
+            weekly hours = 168
+            hourly pay rate = 100
+            federal tax = .50
+            state tax = .50
+
+        Output:
+             CRASH BANDICOOT PAY INFORMATION
+
+                  pay
+                         Hours Worked:           168
+                             Pay Rate: $      100.00
+                            Gross Pay: $    16800.00
+
+               Deductions
+          Federal Withholding (50.0%): $     8400.00
+            State Withholding (50.0%): $     8400.00
+                      Total Deduction: $    16800.00
+
+                              Net Pay: $        0.00
+
+        *Another success! slightly more hilarious, but was needed to test the limits*

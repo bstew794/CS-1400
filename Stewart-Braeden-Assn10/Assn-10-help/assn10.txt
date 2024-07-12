@@ -1,0 +1,16 @@
+Braeden Stewart
+CS 1400
+Assn-10
+
+    My goal with this program is to draw circular patterns according to user input
+
+Design:
+
+    pattern.py will start by import turtle
+
+    pattern.py will then define the setup() function to set the speed, and original orientation
+
+    drawRectanglePattern() will be defined
+
+        turtle will go to given coordinates and begin loop to draw all the rectangles in a circular pattern
+

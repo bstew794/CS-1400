@@ -1,0 +1,67 @@
+Braeden Stewart
+CS 1400
+Assn-6: Task 1
+
+To complete this exercise, I am going to need a program that can calculate the area of a regular polygon {rounded to 5 decimal places}
+	polygon will be an n-sided shape that all sides are the same length and all angles are the same degree
+		formula to figure this out; Area = n X (s^2) divided by (4 X tan(PI / n))
+			s and n will be input by the user
+				* Additionally, pow() and tan() should be seperately imported from the math module *
+
+Analysis:
+
+	Accomplishing this task will definitely require:
+		The round() functiom for the 5 decimal requirement
+		The print() function to display the area	
+		The eval() and input() functions {most likely combined together for clean code}
+		The aforementioned math module functions: pow(), and tan()
+
+	formulas needed:
+	    area = (n * (s^2)) / (4 * tan(pi / s))
+
+	Possible errors:
+		syntax due to frantic typing
+		domain issues {I only need to worry about n though}
+
+Design:
+
+	I am going to begin by importing the functions from the math module using * from math import *.
+	Next, I will use eval(input()) to prompt the user for the number of sides, and side length.
+		I plan on using abs() for n to force a postive value from the user.
+		"numberOfSides" will be used as the variable for n, and "sideLength" will be used for s.
+
+	The variable "area" will be used for storing the result of the formula, during which the round function will be used.
+	
+	I will end the program by using the print function to display the area to the user.
+	
+	*Unnecessary role-playing flair may be added*
+
+Implementation (see task1.py).
+
+Testing:
+	
+	Test 1:
+		input values: n = 7, and s = 7
+		output: area = 178 {unexpected output}
+			*I can see that I forgot to specifiy to how many decimals to round to, and so I went and fixed that*
+
+	Test 2:
+		input values: n = 8, and s = 12
+		output: area = 695.29351
+			*goood...gooood, this death star is fully operational!*
+
+	Test 3:
+		input values: n = 9, and s = 13
+		output: area = 1044.72829
+
+	Conclusion:
+		Test went smoothly after specifying the decimal range to 5, ie:round(x, 5).
+
+	
+
+
+
+	
+	
+
+

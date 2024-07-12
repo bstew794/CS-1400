@@ -1,0 +1,66 @@
+Braeden Stewart
+CS 1400
+Assn-8: task 2
+
+    My goal with this program is to find the four perfect numbers that are less than 10,000.
+        A perfect number is a positive integer that is equal to the sum of all its positive divisors, excluding itself.
+        For example, 6 = 3 + 2 + 1.
+
+    Additionally, I must display the amount of iterations that the inner loop goes through,
+        as well as the time it took to complete it. For this, I will import the time module to measure the time taken.
+
+    From the description in the textbook, there are only four perfect numbers that are less than ten thousand
+        (Liang, pg. 165, exercise 5.35). This means that I can stop looking for perfect numbers after four are found.
+        additionally I was given two examples of perfect numbers including their divisors; This included one each time,
+        so I knew I could create a list with 1 already in it. After this, I only need to find the rest of the divisors
+        of the number.
+
+    Since I am planning on storing the divisors in a list, then that means I can use the sum function to add them
+        all together, and test whether that is equal to the number we are testing
+
+    I am definitely going to need to use while/for loops to repeat the process to find the perfect numbers until four are found.
+        With regard to this, I only want to store the divisors that have no remainder when divided from the number.
+        I think I may be able to do this with by combining FOR , and IF
+        as well as IN (which is used for limiting values to range, I think?).
+
+Design:
+    Program will begin by importing time
+
+    Program will record start time, and variables will be given values
+
+    while loop for when numberOfPerfectNumbers is less than four:
+
+        divisors list will have one already in it
+
+        divisors from two to the number (number not included) will be added to divisors list if number % divisor == 0
+            (for loop)
+
+            program will determine if sum of divisors list equals the number
+
+                program will add perfect numbers to a list
+
+                program will add 1 to numberOfPerfectNumbers
+
+        one will be added to the number
+
+        the count variable will receive an additional one.
+
+        program will display the first four perfect numbers, along with the time it took to run
+            as well as the number of iterations that the inner loop took
+
+        End of line.....
+
+Implementation: see task1.py
+
+Testing:
+
+    Output should be [6, 28, 496, 8128]
+
+    when I run it the output is:
+
+        Perfect numbers less than 10,000 are [6, 28, 496, 8128]
+        The program took 5.505 seconds to run.
+        And the inner loop took 8123 iterations!
+
+    *This does not make perfect sense since the iterations of the inner loop should be a lot larger,
+        but I have no other idea on how to count iterations as of right now*

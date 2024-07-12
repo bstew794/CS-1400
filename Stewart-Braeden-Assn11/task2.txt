@@ -1,0 +1,117 @@
+Braeden Stewart
+CS 1400
+Assn11 - task 2
+
+    My goal is to create a program that manages a user's bank account and displays information regarding this account.
+     I hope to store the user's information using classes.
+
+     Some requirements include: restricting user input to positive numbers, restricting annual interest rate to under
+     ten percent, and that asks user to give a viable input.
+
+Design:
+
+    account.py will start by defining class "Account"
+        id, balance, and annual interest rate will be initialized here as private variables
+
+    getId, getBalance, and getAnnualInterestRate will be defined as public functions to retrieve the private variables
+
+    getMonthlyInterestRate, and getMonthlyInterest will be defined as public functions to retrieve the their variables
+
+    withdraw and deposit will be defined as functions
+
+
+    assn11-task2.py will begin by importing account.py
+
+    main() will be defined:
+
+        a while loop will be used
+            the user will be prompted to input an id, balance, and annualInterestRate value
+
+            if annualInterestRate > 10 or if any of the variables are negative, then the loop will start over
+
+        the Account class will be invoked to store the variables of id, balance, and annualInterestRate
+
+        a while loop will be used
+            a menu will be display showing 8 options for the user to choose from to do. the 8 options are Display ID,
+            Display Balance, Display Annual Interest Rate, Display Monthly Interest Rate, Display Monthly Interest,
+            Withdraw Money, Deposit Money, Exit
+
+            if the user inputs a value outside of 1-8 then the loop will restart and ask the user for a valid input
+
+        "Goodbye" is printed if the user chooses Exit, and the function ends
+
+    main() is invoked
+
+    end of line...
+
+Implementation: see account.py, and assn11-task2.py
+
+Testing:
+
+    Test 1:
+        Input:
+
+            Please give me an ID, balance, and annual interest rate:
+            1234,4321,5
+            (1:) Display ID
+            (2:) Display Balance
+            (3:) Display Annual Interest Rate
+            (4:) Display Monthly Interest Rate
+            (5:) Display Monthly Interest
+            (6:) Withdraw Money
+            (7:) Deposit Money
+            (8:) Exit
+
+            What do you want to do?
+            8
+
+        Output:
+
+            Goodbye!
+    Test 2:
+        Input:
+
+            Please give me an ID, balance, and annual interest rate:
+            -2,-2000,15
+
+        Output:
+
+            Negative numbers are not accepted, please try again.
+
+            You cannot have an annual interest rate higher than 10, please try again.
+
+            Please give me an ID, balance, and annual interest rate:
+
+    Test 3:
+        Input:
+
+            Please give me an ID, balance, and annual interest rate:
+            1234,4321,7
+            (1:) Display ID
+            (2:) Display Balance
+            (3:) Display Annual Interest Rate
+            (4:) Display Monthly Interest Rate
+            (5:) Display Monthly Interest
+            (6:) Withdraw Money
+            (7:) Deposit Money
+            (8:) Exit
+
+            What do you want to do?
+            9
+
+        Output:
+
+            I am sorry that is not a valid input
+
+            (1:) Display ID
+            (2:) Display Balance
+            (3:) Display Annual Interest Rate
+            (4:) Display Monthly Interest Rate
+            (5:) Display Monthly Interest
+            (6:) Withdraw Money
+            (7:) Deposit Money
+            (8:) Exit
+
+            What do you want to do?
+
+End of line...

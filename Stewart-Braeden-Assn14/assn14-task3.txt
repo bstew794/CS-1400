@@ -1,0 +1,63 @@
+Braeden Stewart
+CS 1400
+Assn 14 - task 3
+
+    My hope is to create a program that will simulate a game of Gubbins. The game of Gubbins involves dealing the player
+        a hand of 30 cards from a 120 card deck. Each card is unique but share three common attributes: numeric value,
+        Mano, and Coin. cards can have any numeric value from 1 to 20, a Mano of "Rock", "Paper", or "Scissors" and a
+        Coin of "Heads", or "Tails".
+
+    Also, the program must display a menu for the user to choose between five options: sort by value, sort by ID,
+        find card, new hand, quit. the sorting options will use a selection-sort function that I need to design.
+        the find card option will consist of a binary search function to the see if the card is in the player's current
+        hand. New hand will generate a new hand and shuffle the deck, and quit will quit the program.
+
+Design:
+
+    gubbinsutil.py will start by importing the random module
+
+    the lists of Mano, and Coin will be created along with the max card value
+
+    The Card class will be initialized
+
+        self.__mano, self.__coin, self.__value will be created and defined according to a cardID input
+
+        get functions will be defined to retrieve private variables
+
+    the Deck class will be initialized
+
+        self.__deck, a list variable, will be created
+
+        __generateDeck() will be defined to generate a deck of 120 unique cards.
+
+        shuffle() will be defined, which will invoke __generateDeck() and then shuffle the newly created deck
+
+        draw() will be defined to draw cards from the top of the deck
+
+
+    convertToCardValue() will be defined to take in cardValue, cardMano, cardCoin and return the cardID
+
+
+    assn14-task3.py will begin by importing Deck, convertToCardValue from gubbinsutil.py
+
+    main() will be defined:
+
+        Deck will be invoked to create and shuffle a deck
+
+        the hand list will be built from the deck by drawing 30 cards from the top of the deck
+
+        menu will be presented to user and the program will:
+
+            selection sort their hand by cardValue,
+
+            selection sort their hand by cardID,
+
+            binary search for player-chosen card to see if it is in their hand,
+
+            get new hand and shuffled deck,
+
+            exit the program
+
+    main() will be invoked
+
+    end of line...

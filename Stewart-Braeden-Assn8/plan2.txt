@@ -1,0 +1,65 @@
+Braeden Stewart
+CS 1400
+Assn-8: task 2
+
+    My Goal with this program is to simulate a game show situation in which you're given the choice of three doors:
+        Behind one door is a car; behind the others, goats. This assumes that the user has already chosen a door and
+        will ask if they want to stay with their choice or choose another door. The program will simulate this game a
+        1000 times with a single user input to use statistics to prove that it is to the user's advantage to switch
+        doors (the user's initial choice will be randomized).
+
+    I will need to import the random module to randomly assign which doors have a the goat or a car.
+        I will also need to make sure they don't have the same values, possibly using lists.
+
+    The while loop will also be essential to repeat the game for a 100000 times, and to display the winning percentage
+
+    In order to ask for an input, I will need input().
+        Additionally, I will need to use if and else statements with the operator <, >,
+        or logical operators (AND, OR, and NOT)
+        to determine whether the user won in a game or not.
+
+    Possible issues could be:
+        That the user inputs a value outside of Y/N (such as dweeb, otaku, or Harshirama-senpai...)
+        many, MANY logic errors on my part.
+
+Design:
+
+* = added later
+
+    The program will begin by importing the Random module.
+
+    *Program then will prompt them on whether they want to stay with their choice or not. *
+
+    *while loop will begin using while loop to count of one hundred thousand
+
+        The program will randomly choose which doors is the winning door.
+
+        The program will randomly choose which door was the users initial choice.
+
+        The program will randomly choose a door to reveal a goat behind that is not the user's initial choice
+            or the winning door
+
+        Program will determine whether the user won each game or not, and calculate their winning percentage.
+
+    Program will display number of wins, and winning percentage to player.
+
+    End of line...
+
+Implementation: see task2.py
+
+Testing:
+
+    output should be 66 % winning percentage for switching, and 33 percent for staying
+
+    the output is:
+
+    Would you like to switch? (Y/N):Y
+    you have 66883 wins, and a winning percentage of 66.88233117668824
+    Would you like to play again? (Y/N):
+
+    and
+
+    Would you like to switch? (Y/N):N
+    you have 33407 wins, and a winning percentage of 33.40666593334067
+
+

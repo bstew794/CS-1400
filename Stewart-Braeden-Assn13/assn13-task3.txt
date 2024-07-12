@@ -1,0 +1,75 @@
+Braeden Stewart
+CS 1400
+Assn 13 - task 3
+
+    My hope is to create a program that draws a list of shapes that have been stored as objects defined by specific
+        classes according to a user input. The program must also display a menu each time that provide the option of
+        adding/removing objects from the list as well as drawing them, and a exit option to terminate the program.
+        All shapes must be in the same list, and the shapes may only be certain colors that are also defined in a list.
+
+Design:
+
+    Circle.py will begin by importing turtle
+
+    The Circle class will be defined:
+
+        the centerX, centerY, etc. variables will be stored as private variables in the initializer
+
+        the draw() function will be defined:
+
+             a circle according to the given variables will be drawn
+
+
+    Rectangle.py will begin by importing turtle
+
+    The Rectangle class will be defined:
+
+        the centerX, centerY, etc. variables will be stored as private variables in the initializer
+
+        the draw() function will be defined:
+
+            a rectangle according to the given variables will be drawn
+
+
+    assn13-task3.py will begin by importing Circle from circle.py, and Rectangle from rectangle.py and turtle will be
+        imported
+
+    isColorValid() will be defined to check if user color matches the list of [red, green, blue, yellow]
+
+    main() will be defined:
+
+        a while loop will start:
+
+            a menu will be displayed for the user to see
+
+            the program will ask for user input
+
+            if "Enter Circle":
+
+                asks for dimensions from user
+
+                adds a circle of class Circle to the object list with user input
+
+            if "Enter Rectangle":
+
+                asks for dimensions from user
+
+                adds a rectangle of class Rectangle to the object list with user input
+
+            if "Remove shape"
+
+                displays list and asks for user input
+
+                removes chosen object from list
+
+            if "Draw shape":
+
+                draws all objects in the list in order
+
+            if "Exit":
+
+                exits while loop and ends function
+
+    main() will be invoked
+
+    End of line...

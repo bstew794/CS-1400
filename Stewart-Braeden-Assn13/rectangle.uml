@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>Python</ID>
+  <OriginalElement>#C:/Users/bstew/PycharmProjects/Stewart-Braeden-Assn13/rectangle.py</OriginalElement>
+  <nodes>
+    <node x="0.0" y="542.0">rectangle.Rectangle</node>
+    <node x="34.5" y="0.0">object</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="rectangle.Rectangle" target="object">
+      <point x="0.0" y="-92.0" />
+      <point x="0.0" y="246.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="68.0" y="402.5" />
+  <SelectedNodes>
+    <node>rectangle.Rectangle</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+    <Category>Fields</Category>
+  </Categories>
+</Diagram>
+

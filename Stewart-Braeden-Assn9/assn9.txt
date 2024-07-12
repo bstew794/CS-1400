@@ -1,0 +1,113 @@
+Braeden Stewart
+CS 1400
+Assn-9
+
+    My goal with this program is to draw a chessboard using the turtle module in python. Some additional requirements
+        are that this must be done using functions that are defined in a separate file named chessboard.py.
+        The main file, assn9.py must then import these functions to display the chessboard according to a
+        location, width,and height provided by the user. If a width and height are not provided then the system
+        will use a default value of 250 for both the width and height.
+
+    First off, I will ned to import turtle at the top of chessboard.py, which will then allow me to define functions
+        for drawing the checkered pattern, and the border.
+
+    I will use while loops to repeatably draw small black rectangles to form a checkered pattern.
+
+    Conditionals such as AND, ==, etc will be used to determine what course to take if the user did not input values
+        for the width and height.
+
+    possible issues could include:
+        user inputs an invalid value
+        assn9.py does not import chessboard.py easily
+        syntax and logic errors on my part
+
+Design:
+
+    chessboard.py will begin by importing turtle
+
+    chessboard.py will define a function that draws a simple black rectangle
+
+    chessboard.py will define drawAllRectangles() as a function for creating the checkered pattern
+
+        The size of each checkered square will be found by dividing the width, and height by 8
+
+        The center of the first square will be found, and count will be assigned a starting value
+
+        while loops will be created that draw the checkered squares row by row calling drawRectangle()
+
+    drawChessboard() will be defined as a function that draws the entire chessboard
+
+        The border will be drawn.
+
+        Then drawAllRectangles() will be called to draw the checkered pattern.
+
+    main() will be defined in chessboard.py as a function that determines which of four paths to go.
+
+        The first path is determined by if width == "" AND height == ""
+
+        The second path is determined by if width == ""
+
+        The third path is determined by if height == ""
+
+        The fourth path is when both width and height are provided by the user.
+
+
+    assn9.py will begin by importing chessboard.py
+
+    It will then ask the user to input values for location, width, and height
+
+    assn9.py will call main() from chessboard.py to draw the chessboard to user specifications
+
+    End of line...
+
+Implementation: see assn9.py and chessboard.py
+
+Testing:
+
+    Test 1:
+        input:
+
+            Please give me an x-component:100
+            Please give me an y-component:100
+            Please give me the desired width:100
+            Please give me the desire height:100
+
+        output:
+
+            A 100 X 100 chessboard is drawn at (100, 100), showing that it took the fourth path without issue.
+
+    Test 2:
+        input:
+
+            Please give me an x-component:100
+            Please give me an y-component:100
+            Please give me the desired width:100
+            Please give me the desire height:
+
+        output:
+
+            A 100 X 250 rectangular chessboard is drawn at (100, 100), showing that it took the third path excellently.
+
+    Test 3:
+        input:
+
+            Please give me an x-component:100
+            Please give me an y-component:100
+            Please give me the desired width:
+            Please give me the desire height:100
+
+        output:
+
+            A 250 X 100 rectangular chessboard is drawn at (100, 100), showing that it took the second path excellently.
+
+    Test 4:
+        input:
+
+            Please give me an x-component:100
+            Please give me an y-component:100
+            Please give me the desired width:
+            Please give me the desire height:
+
+        output:
+
+            A 250 X 250 chessboard is drawn at (100, 100), showing that it took the first path without issue.

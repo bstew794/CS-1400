@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>Python</ID>
+  <OriginalElement>#C:/Users/bstew/PycharmProjects/Stewart-Braeden-Assn12/chessboard.py</OriginalElement>
+  <nodes>
+    <node x="0.0" y="542.0">chessboard.Chessboard</node>
+    <node x="34.0" y="0.0">object</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="chessboard.Chessboard" target="object">
+      <point x="0.0" y="-114.0" />
+      <point x="0.0" y="246.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="78.5" y="354.5" />
+  <SelectedNodes>
+    <node>object</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+</Diagram>
+

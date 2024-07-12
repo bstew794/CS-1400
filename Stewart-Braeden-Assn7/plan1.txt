@@ -1,0 +1,84 @@
+Braeden Stewart
+CS 1400
+Assn-7: task 1
+
+    My goal is to have this program will play Rock, Paper, Scissors with the user using a randomly generated number
+        that will then compare to the user's input numbers to determine who wins.
+
+    In order to ask for an input, I will need eval() and input() to be combined.
+    Additionally, I will need to use if and else statements with the operator == or logical operators (AND, OR, and NOT)
+        to assign a print() line to the correct situation.
+    I also need to import the randint() function from the random module to simulate the computer's choices.
+
+    possible issues could be:
+        User inputs a number outside the range of 0 to 2 (may use not function to fix this in version 2).
+
+Design:
+    The program will begin with importing randint() from the random module.
+
+    The program will then prompt the user to choose between rock(0), paper(1), or scissors(2) using the numbers.
+
+    *In Version 2, a NOT statement will end program if user inputs a value outside of zero to two range.*
+
+    A random number, zero to two, will be generated to represent the computer's choice.
+
+    if-else statements will print a line telling what the computer chose and what the user chose;
+        comparing them based on the numbers provided
+
+    *Version 2 will use if-else statements combined with AND to chose which print statement to run.*
+
+    end of line...
+
+Implementation: see task1v1.py, and task1v2.py.
+
+Testing (version 1):
+
+    Test 1:
+        Input:
+            User types in 2
+
+        Output:
+            The computer chose paper, and you chose scissors. You won!
+
+    Test 2:
+        Input:
+            User types in 0
+
+        Output:
+            The computer chose paper, and you chose rock. You lost.
+
+    Test 3:
+        Input:
+            User types in 1
+
+        Output:
+            The computer chose scissors, and you chose paper. You lost.
+
+    *Encountered no visible issues, but I think I know of a way to better organize my code for version 2*
+
+Testing (version 2):
+
+    Test 1:
+        Input:
+            User types in 0
+
+        Output:
+            The Computer chose scissors, and you chose rock. You won!
+
+    Test 2:
+        Input:
+            User types in 0
+
+        Output:
+            The Computer chose paper, and you chose rock. You lost.
+
+    Test 3:
+        Input:
+            User types in 0
+
+        Output:
+            The Computer chose paper, and you chose rock. You lost.
+
+    *Encountered no issues, and I implemented a way to restrict user input to 0,1, and 2.*
+    *I found it interesting that # of code lines is the same in both versions,
+        if you ignore the lines that are in charge of terminating the program if the userValue is not 0,1, or 2.*

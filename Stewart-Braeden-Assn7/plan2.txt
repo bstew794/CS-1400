@@ -1,0 +1,64 @@
+Braeden Stewart
+CS 1400
+Assn-7: task 2
+
+    My goal is to have this program ask for the centers and radii of two circles from user input.
+    The program will then compare these values to determine whether
+        the circles overlap, are inside of each other, or neither.
+
+    In order to ask for an input, I will need eval() and input() to be combined.
+    Additionally, I will need to use if and else statements with the operator <, >, or logical operators (AND, OR, and NOT)
+        to assign a print() line to the correct situation.
+
+    In order to determine the various states of the circles,
+        I am going to need to compare their radii to the distance between their centers.
+    Because of this, I need to use the distance equation for between two points:
+        distance = sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
+    This will also mean I need to import sqrt() from the math module.
+
+Design:
+    The program will begin by importing srt() from the math module.
+
+    The program will then prompt the user to input values for the centers of circle1, and circle2 along with their radii.
+
+    The distance formula will then be used to determine the distance between the centers.
+
+    If distance is less than r1 - r2, then the program will print that circle 2 is inside of circle 1.
+
+    If distance is less than r2 - r1, then the program will print that circle 1 is inside of circle 2.
+
+    If distance is less than r2 + r1, then the program will print that they are overlapping.
+
+    Anything else will cause the program to print that they are not either.
+
+    end of line...
+
+Implementation: see task2.py.
+
+Testing:
+
+    Test 1:
+        Input:
+            User types in 0,0,5 for circle 1.
+            User types in 5,5,10 for circle 2.
+
+        Output:
+            circle 2 is overlapping with circle 1.
+
+    Test 2:
+        Input:
+            User types in 1,2,15 for circle 1.
+            User types in 5,4,20 for circle 2.
+
+        Output:
+            circle 1 is inside of circle 2.
+
+    Test 3:
+        Input:
+            User types in 10,5,5 for circle 1.
+            User types in 0,0,5 for circle 2.
+
+        Output:
+            circle 2 and circle 1 do not overlap nor are inside of each other.
+
+    *Tests went swimmingly, and I did not encounter any issues. However, I did not test for negative values."

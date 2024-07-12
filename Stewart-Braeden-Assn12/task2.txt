@@ -1,0 +1,107 @@
+Braeden Stewart
+CS 1400
+assn12 - task 2
+
+    My hope for this program is to create a class called Password that will be used to analyze a user-given password
+        against predetermined standards such as: password length, characters, and that it does not contain the string
+        "password".
+
+        The program must return an appropriate error message, and ask for a new password if isValid() returns False.
+
+        The Password class must been in its own file named password.py, and the class must have
+        isValid(), setPassword(), getErrorMessage() at minimum.
+
+Design:
+
+    the Password class will be defined:
+
+        self.__password, and self.__Message will be initialized
+
+        setPassword() will be defined to change self.__password when needed
+
+        getErrorMessage() will be defined to return self.__message
+
+        isValid() will be defined:
+
+            it will check if "password" is contained in self.__password
+                returns False if True
+
+            then isValid() will check if self.__password ends with "123"
+                returns False if True
+
+            checks if password is shorter than 8 characters
+                returns False if True
+
+            checks if password does not have two digits in it
+                returns False if True
+
+            checks if password is not made of ONLY aplhanumeric characters
+                returns False if True
+
+            returns True if it does not meet any of these conditions
+
+
+    the assn12-task2.py program starts by importing the Password class from password.py
+
+    main() is defined:
+
+        asks for a password from the user
+
+        while loop starts
+
+            tests password by calling isValid()
+
+            if False:
+                prints error message and asks for new password from user
+
+            else:
+                break the while loop
+
+        print "Thank you"
+
+    main() is evoked
+
+    end of line...
+
+Implementation: see assn12-task2.py and password.py
+
+Testing:
+
+    Test 1:
+        Input:
+
+            Please enter a new password:
+            password123
+
+        Output:
+
+                   You may not use "password" as a password...
+
+                    Please enter a new password:
+
+    Test 2:
+        Input:
+
+            Please enter a new password:
+            StarWars35!
+
+        Output:
+
+            Your password can only contain letters and digits.
+
+            Please enter a new password:
+
+    Test 3:
+        Input:
+
+            Please enter a new password:
+            StarWars35
+
+        Output:
+
+            That is a valid password,
+
+            Thank you for your time
+
+
+End of line...

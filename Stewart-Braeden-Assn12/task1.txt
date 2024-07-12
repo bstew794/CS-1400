@@ -1,0 +1,97 @@
+Braeden Stewart
+CS 1400
+Assn12 - Task 1
+
+    My goal is to create a program that draws a chessboard according to user input of location, height, and width.
+        I need to use classes this time to approach the problem in a Object-Orientated way.
+
+        requirements include: not modifying the given "assn12-task1.py", and making sure all variables
+        and functions are private except for draw().
+
+Design:
+
+    chessboard.py will import turtle
+
+    the class Chessboard will be defined
+        startX, startY, height, and width will be initialized here with default values of 250 for height and width
+
+    drawBorder() will be defined as a private function
+        it will draw the border of the chessboard at startX, startY with variables width and height
+
+    drawRectangle() will be defined as a private function
+        it will draw each individual black rectangle for the checkered pattern
+
+    drawAllRectangles() will be defined as a private function
+        a while loop will be created:
+            this will end when it has gone through 8 iterations
+
+            another while will be created:
+                this will end when it has gone through 8 iterations
+                this will draw the checkered pattern by calling drawRectangle till done
+
+    draw() will be defined as a public function
+        drawBorder() will be called
+        drawAllRectangles() will be called
+
+
+    assn12-task1.py will start by importing turtle
+
+    assn12-task1.py will import Chessboard from chessboard.py
+
+    main() will be defined
+        it will ask for user input and draw the chessboard accordingly
+
+    main() will be invoked
+
+    end of line...
+
+Implementation: see assn12-task1.py and chessboard.py
+
+Testing:
+
+    Test 1:
+        Input:
+
+            Enter a starting point: 0,0
+            Input a width:
+            Input a height:
+
+        Output:
+
+            A 250 X 250 chessboard is drawn with its bottom left corner at (0,0)
+
+    Test 2:
+        Input:
+
+            Enter a starting point: 0,0
+            Input a width: 100
+            Input a height:
+
+        Output:
+
+            A 250 X 100 chessboard is drawn with its bottom left corner at (0,0)
+
+    Test 3:
+        Input:
+
+            Enter a starting point: 0,0
+            Input a width:
+            Input a height: 100
+
+        Output:
+
+            A 100 X 250 chessboard is drawn with its bottom left corner at (0,0)
+
+    Test 4:
+        Input:
+
+            Enter a starting point: 0,0
+            Input a width: 100
+            Input a height: 100
+
+        Output:
+
+            A 100 X 100 chessboard is drawn with its bottom left corner at (0,0)
+
+
+End of line...
